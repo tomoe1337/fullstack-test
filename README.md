@@ -95,6 +95,7 @@
 -   применяем миграции и сидер: `docker-compose exec web php spark migrate`, `docker-compose exec web php spark db:seed CommentSeeder`;
 -   сайт: `http://localhost/`;
 -   база через adminer: `http://localhost:8080`, server `db`, логин `root`, пароль `cod31gn1t3`, база `codeigniter_db`.
+-   запустить тесты: `docker-compose exec web vendor/bin/phpunit`
 
 Проверка: 3 комментария на странице с выбором конкретной, сортировка по id/дате по возрастанию/убыванию, невалидный email показывает ошибку без перезагрузки, удаление через подтверждение без перезагрузки.
 
